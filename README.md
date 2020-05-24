@@ -1,10 +1,10 @@
- PICTURESQUE {fotoGallery}
-
+ # PICTURESQUE {fotoGallery}
+---------------------------------------------------------------------------
 ## Developed by [Duncan Kiragu](https://github.com/Duncan-Kiragu)
-
+---------------------------------------------------------------------------
 ## DESCRIPTION
 This is a web application built using django framework that allows users to view images; the images are filtered using title,categories and tagged location. The app has an admin panel that allows adding of images and editing the details
-
+--------------------------------------------------------------------------
 ## USER STORIES
 A user is able to :
 
@@ -19,7 +19,7 @@ The web application is accessible to users of both desktop and mobile formats: r
 The application is thoroughly tested and has implemented various error handlers to prevent the application from crashing.
 
 The link to the images posted on the application can be gotten by clicking the **COPY IMAGE LINK** in the modal displayed on clicking an image.
-
+---
 ## PROJECT SPECIFICATIONS
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
@@ -32,6 +32,7 @@ The link to the images posted on the application can be gotten by clicking the *
 | To search  | **Enter text in search bar** | Users can search by category|
 | To filter by Location  | **Click drop-down on navbar** | Users can view images by Location|
 
+--------------------------------------------------------------------------
 ## SETUP / INSTALLATION
 
 ### PREREQUISITES
@@ -42,42 +43,50 @@ The link to the images posted on the application can be gotten by clicking the *
 * Programming knowledge (any level)
 * Internet connection
 
+--------------------------------------------------------------------------
 ### ACQUIRING PROJECT
 > CLONING
-> DOWNLOAD ZIP
 
+> DOWNLOAD ZIP
+---------------------------------------------------------------------------
 #### CLONING PROJECT
 * Open terminal and type:
 
-    $ git clone https://github.com/Duncan-Kiragu/fotoGallery
+         $ git clone https://github.com/Duncan-Kiragu/fotoGallery
+
         $ cd fotoGallery
 
 * OR download zip file to your laptop / computer
     
-    $ Clone Or Download button (green)
+         $ Clone Or Download button (green)
 
 ## RUNNING APPLICATION
 * Install virtual environment
 
-    $ python3.9 -m venv --without-pip virtual
+        $ python3.8 -m venv --without-pip virtual
+
         $ source virtual/bin/activate
+
         $ curl https://bootstrap.pypa.io/get-pip.py | python
 
 * Install Django and its dependencies
 
-    $ pip3 install django
-    $ pip install django
-    $ pip install -r requirements.txt
+        $ pip3 install django
+
+        $ pip install django
+
+        $ pip install -r requirements.txt
 
 * Run application
 
-    $ python3.8 manage.py runserver
+        $ python3.8 manage.py runserver
 
 ## TESTING THE APPLICATION
 * To run the tests for the class models:
 
         $ python3.8 manage.py test photos
 
+--------------------------------------------------------------------------
 ## TECHNOLOGIES USED
 * Python3.8
 
@@ -91,6 +100,7 @@ The link to the images posted on the application can be gotten by clicking the *
 
 * JQuery && JavaScript
 
+---------------------------------------------------------------------------
 ## LICENSE
 
 Copyright (c) 2020 - [Duncan-Kiragu]
