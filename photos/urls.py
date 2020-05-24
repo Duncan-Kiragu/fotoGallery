@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns=[
-    re_path(r'^$',views.welcome,name = 'welcome'),
+    re_path(r'^$',views.home,name = 'home'),
     re_path(r'^search/', views.search_results, name='search_results'),
     re_path(r'^image/(\d+)',views.get_image_by_id,name ='image')
 ]
