@@ -36,3 +36,18 @@ The link to the images posted on the application can be gotten by clicking the *
 
 ### PREREQUISITES
 * Python 3.8
+* Virtualenv
+* Good code editor
+* Bash / Terminal
+* Programming knowledge (any level)
+* Internet connection
+
+### ACQUIRING PROJECT
+> CLONING
+> DOWNLOAD ZIP
+
+#### CLONING PROJECT
+* Open terminal and type:
+
+    $ git clone https://github.com/Duncan-Kiragu/fotoGallery
+        $ cd fotoGallery
