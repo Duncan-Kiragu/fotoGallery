@@ -4,7 +4,7 @@
 {% load bootstrap4 %}
 <br>
 <br>
-<div class="container">
+<div class="container-fluid" style="background-color: rgba(189, 187, 168, 0.966);">
 
   <div class="card-columns">
     {% for image in images %}
@@ -20,30 +20,31 @@
 {% for image in images %}
 
 <!-- Modal -->
-<div class="modal fade" id="extraModal{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="extra" aria-hidden="true">
+<div class="modal fade" id="extraModal{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="extra" aria-hidden="true" >
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content" style="background-color: rgba(135, 163, 201, 0.966);">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Title: {{image.name}}</h5>
+        <h5 style="font-family: 'Chelsea Market', cursive;" class="modal-title" id="exampleModalLongTitle">|| TITLE ||:<hr> {{image.name}}</h5><hr>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
       </div>
 
       <div class="modal-body">
         <img class="card-img-top" class="img-responsive" src="{{image.img.url}}" size="100px200">
-        <p>About: {{image.description}}</p>
-        <p>Location: {{image.location}}</p>
-
+        <h5 style="font-family: 'Chelsea Market', cursive;"><br>|| ABOUT ||<hr><hr> {{image.description}}</h5>
+        <hr>
+        <h5 style="font-family: 'Chelsea Market', cursive;">|| LOCATION ||<hr><hr> {{image.location}}</h5>
+        <hr>
         {% for category in image.categories.all %}
-        <p> Category: {{ category.name }} </p>
+        <h5 style="font-family: 'Chelsea Market', cursive;">|| CATEGORY ||<hr><hr> {{ category.name }} </h5>
         {% endfor %}
-
+        <hr>
         <!-- The button used to copy the text -->
 
-        <button type="button" name="button" class="btn btn-info" value="https://127.0.0.1/{{image.img.url}}" onclick="copylink(this.value)">Copy Image Link</button>
+        <button type="button" name="button" style="font-family: 'Chelsea Market', cursive;" class="btn btn-info" value="https://127.0.0.1/{{image.img.url}}" onclick="copylink(this.value)">COPY IMAGE LINK</button>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" style="font-family: 'Chelsea Market', cursive;" class="btn btn-info" data-dismiss="modal">CLOSE</button>
 
       </div>
     </div>
