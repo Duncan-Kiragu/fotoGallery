@@ -1,5 +1,6 @@
 from django.db import models
 import datetime as dt
+from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 # Create your models here.
 class categories(models.Model):
@@ -17,9 +18,9 @@ class Location(models.Model):
 class Image(models.Model):
     name= models.CharField(max_length=50)
     description = HTMLField()
-    gallery_image = models.ImageField(upload_to='pictures/', blank=True)
     categories = models.ManyToManyField(categories)
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
+    img = models.ImageField(upload_to="pictures/",blank=True, null=True)
 
     @classmethod
     def all_images(self):
