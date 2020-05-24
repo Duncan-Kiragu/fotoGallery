@@ -4,7 +4,7 @@
 ---------------------------------------------------------------------------
 ## DESCRIPTION
 This is a web application built using django framework that allows users to view images; the images are filtered using title,categories and tagged location. The app has an admin panel that allows adding of images and editing the details
---------------------------------------------------------------------------
+
 ## USER STORIES
 A user is able to :
 
@@ -18,8 +18,8 @@ The web application is accessible to users of both desktop and mobile formats: r
 
 The application is thoroughly tested and has implemented various error handlers to prevent the application from crashing.
 
-The link to the images posted on the application can be gotten by clicking the **COPY IMAGE LINK** in the modal displayed on clicking an image.
----
+The link to the images posted on the application can be gotten by clicking the COPY IMAGE LINK in the modal displayed on clicking an image.
+
 ## PROJECT SPECIFICATIONS
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
