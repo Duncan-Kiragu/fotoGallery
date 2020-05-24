@@ -51,3 +51,22 @@ The link to the images posted on the application can be gotten by clicking the *
 
     $ git clone https://github.com/Duncan-Kiragu/fotoGallery
         $ cd fotoGallery
+
+* OR download zip file to your laptop / computer
+    
+    $ Clone Or Download button (green)
+
+## RUNNING APPLICATION
+* Install virtual environment
+
+    $ python3.9 -m venv --without-pip virtual
+        $ source virtual/bin/activate
+        $ curl https://bootstrap.pypa.io/get-pip.py | python
+
+* Install Django and its dependencies
+
+    $ pip3 install django
+    $ pip install django
+    $ pip install -r requirements.txt
+
+* Run application
